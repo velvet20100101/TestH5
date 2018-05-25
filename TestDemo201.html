@@ -11,6 +11,28 @@ p {color:white}
 	<title> Learn H5 Test Demo 201(from sublime Text) to github</title>
 </head>
 <body>
+
+<script type="text/javascript">
+	document.write("Hello world from document.write");
+</script>
+<!-- below demo internal script  -->
+<p id="scriptDemo">
+JavaScript 可以触发事件，就像按钮点击。
+</p>
+
+<script>
+function myFunction()
+{
+	x=document.getElementById("scriptDemo") // 找到元素
+	x.style.color="#ff0000";          // 改变样式
+	x.innerHTML="Hello JavaScript!";
+}
+</script>
+<noscript> The brower not support JavaScript</noscript>
+
+<button type="button" onclick="myFunction()">点我</button>
+<!-- below demo internal script  -->
+
 <h1 style="text-align:center;"> Title one </h1>
 <hr/>
 <p style="font-family:arial;color:red;font-size:20px;"> This is Paragraph one </p>
@@ -64,8 +86,12 @@ p {color:white}
 <br/>
 以下是一段引用：<q>Build a future where people live in harmony with nature.</q>
 
-<a href="http://www.xiaohouyuanbao.com/" target="_blank">
-<img border="10" src="icon.png"  alt="小猴元宝" width="128" height="128" />	
+<a href="http://www.xiaohouyuanbao.com/" target="_blank"-->
+<img border="10" src="hackanm.gif"  alt="小猴元宝" width="128" height="128" usemap="#testMap"/>
+<map name="testMap">
+	<!--area shape="rect" coords="0,0,82,126" alt="bing" href="http://www.bing.com" target="_blank"-->
+  <area shape="circle" coords="70,50,30" alt="Mercury" href="http://www.baidu.com">
+</map>	
 </a>
 
 <p>
@@ -73,6 +99,80 @@ p {color:white}
 <a href="mailto:abc@sssjvrcom?cc=someone@163.com&bcc=somebody@163.com&subject=这是邮件的主题&body=这是邮件的内容"%20again" rel="nofollow" target="_top">
 发送邮件</a>
 </p>
+
+<form action="submit_form.php" method="get">
+	<fieldset>
+		<legend>Ha Ha form</legend>
+	
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname"><br>
+Mail address:<input type="text" name="email"><br>
+password:<input type="password" name="passwordItem"><br>
+sex: <input type="radio" name="sex" value="male">Male  
+	<input type="radio" name="sex" value="femal">Femal<br>
+car: <br><input type="checkbox" name="car" value="car" checked="checked">I have a car<br>
+<input type="checkbox" name="car" value="bicycle">I have a bicycle<br>
+<select name="cars">
+<option value="volvo" selected="">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+
+	<input type="submit" value="submit">
+	</fieldset>
+	<keygen>Key generator</keygen><br>
+<input type="reset"  value="reset">
+</form>
+
+<textarea cols="10" rows="3">
+	I am a test area
+
+</textarea>
+<input type="button" value="tapMe">
+<table border="1" cellspacing="10">
+	<tr>
+		<th colspan="2">header 1</th>
+
+	</tr>
+	<tr>
+<td>10</td>
+<td>20</td>
+	</tr>
+	<tr>
+<td>100</td>
+<td>200</td>
+	</tr>
+</table>
+<br/>
+<table border="1">
+	<tr>
+		<th>header 1</th>
+		<td>111</td>
+	</tr>
+<tr>
+		<th>header 2</th>
+		<td>222</td>
+	</tr>
+</table>
+
+<p>无序列表</p>
+<ul style="list-style-type:circle">
+	<li>item one</li>
+	<li>item two</li>
+</ul>
+
+<p>有序列表</p>
+<ol start="10">
+	<li>item first</li>
+	<li>item second</li>
+	</ol>
+
+	<ol type="I">
+		<li> item in list, first</li>
+		<li> item in list, second</li>
+
+	</ol>
 </body>
 </head>
 </html>
