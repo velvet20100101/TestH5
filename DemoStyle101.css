@@ -1,0 +1,12 @@
+p {color:rgb(0,0,10);}
+hr {color:green; text-align:center;}
+
+body {/*background-color:#b0c4de;*/
+	background-image:url(hackanm.gif);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:right top;
+	margin-right:200px;
+}
+h1 {color:green; text-align:center; text-transform:uppercase;}
+h2 {text-align:center; text-decoration:underline; }
